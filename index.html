@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meme Maker</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <canvas></canvas>
+  <div id="colors">
+    <input type="color" id="color" />
+    <div class="color-option" style="background-color: #222222" data-color="#222222"></div>
+    <div class="color-option" style="background-color: #CCCCCC" data-color="#CCCCCC"></div>
+    <div class="color-option" style="background-color: #FFFFFF" data-color="#FFFFFF"></div>
+    <div class="color-option" style="background-color: #FF3B30" data-color="#FF3B30"></div>
+    <div class="color-option" style="background-color: #FF6600" data-color="#FF6600"></div>
+    <div class="color-option" style="background-color: #FFFF00" data-color="#FFFF00"></div>
+    <div class="color-option" style="background-color: #27ae60" data-color="#27ae60"></div>
+    <div class="color-option" style="background-color: #3498db" data-color="#3498db"></div>
+    <div class="color-option" style="background-color: #0652DD" data-color="#0652DD"></div>
+    <div class="color-option" style="background-color: #1B1464" data-color="#1B1464"></div>
+    <div class="color-option" style="background-color: #9b59b6" data-color="#9b59b6"></div>
+    <div class="color-option" style="background-color: #6D214F" data-color="#6D214F"></div>
+
+  </div>
+
+  <section>
+    <input id="line-width" type="range" min="1" max="10" value="5" step="0.1" class="slider"/>
+
+    <button id="mode-btn" class="btn">Fill</button>
+    <button id="destroy-btn" class="btn">Destroy</button>
+    <button id="eraser-btn" class="btn">Erase</button>
+  </section>
+  <article>
+    <input type="text" id="text" placeholder="텍스트를 입력하세요 :)"/>
+    <input type="file" accept="image/*" id="file"/>
+    <label for="file"> Add Photo </label>
+    <button id="save" class="btn2">Save</button>
+  </article>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>

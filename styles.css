@@ -1,0 +1,159 @@
+
+:root {
+  --primary-light: #8abdff;
+  --primary: #6d5dfc;
+  --primary-dark: #5b0eeb;
+  --white: #FFFFFF;
+  --greyLight-1: #E4EBF5;
+  --greyLight-2: #c8d0e7;
+  --greyLight-3: #bec8e4;
+  --greyDark: #9baacf;
+}
+
+body {
+  background-color: var(--greyLight-1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+}
+
+canvas {
+  width: 650px;
+  height: 650px;
+  background-color: var(--white) ;
+  border-radius: 3rem;
+  box-shadow: 0.8rem 0.8rem 1.4rem var(--greyLight-2), -0.2rem -0.2rem 1.8rem var(--greyLight-3);
+
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+input[type="range"] {
+	width: 130px;
+  margin-right: 10px;
+  accent-color: var(--primary);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+    margin-top: 15px;
+}
+
+.btn {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: var(--greyDark);
+  border: none;
+  margin: 10px 13px;
+  font-weight: bold;
+
+  background: var(--primary);
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-light), inset -0.2rem -0.2rem 1rem var(--primary-dark), 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  color: var(--greyLight-1);
+}
+
+.btn:hover {
+  color: var(--white);
+}
+.btn:active {
+  box-shadow: inset 0.2rem 0.2rem 1rem var(--primary-dark), inset -0.2rem -0.2rem 1rem var(--primary-light);
+}
+
+#colors {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.color-option {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 10px 0;
+  border-radius: 25px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+
+input[type="color"] {
+  width: 35px;
+  height: 35px;
+  margin: 0 10px 10px 0;
+}
+
+
+#text {
+  width: 220px;
+  height: 40px;
+  border: none;
+  border-radius: 1rem;
+  padding-left: 1.4rem;
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+  background: none;
+  font-family: inherit;
+  color: var(--greyDark);
+  margin-right: 20px;
+}
+#text::placeholder {
+  color: var(--greyLight-3);
+}
+#text:focus {
+  outline: none;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+
+.btn2 {
+  width: 100px;
+  height: 40px;
+  border-radius: 15px;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: var(--greyDark);
+  border: none;
+  margin: 10px 13px;
+  font-weight: bold;
+}
+
+.btn2:hover {
+  color: var(--primary);
+}
+.btn2:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
+
+input#file {
+    display: none;
+}
+
+label {
+  /* all:unset; */
+  border-radius: 15px;
+  box-shadow: 0.3rem 0.3rem 0.6rem var(--greyLight-2), -0.2rem -0.2rem 0.5rem var(--white);
+  cursor: pointer;
+  transition: 0.3s ease;
+  color: var(--greyDark);
+  border: none;
+  font-size: small;
+  background-color: #f0f0f0;
+  margin-right: 15px;
+  padding: 11px 15px;
+  font-weight: bold;
+}
+label:hover {
+  color: var(--primary);
+}
+label:active {
+  box-shadow: inset 0.2rem 0.2rem 0.5rem var(--greyLight-2), inset -0.2rem -0.2rem 0.5rem var(--white);
+}
