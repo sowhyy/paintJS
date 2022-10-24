@@ -3,4 +3,4 @@ nomadcoders Making a Paint with Vanilla JS
 
 
 
-sowhyy.github.io/paintJS
+https://sowhyy.github.io/paintJS
